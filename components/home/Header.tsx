@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { Search, ShoppingBag, User, Star } from "lucide-react";
 import Container from "@/components/shared/Container";
+import MobileNav from "@/components/shared/MobileNav";
 
 const navLinks = [
   { label: "HOME", href: "/" },
@@ -17,7 +18,6 @@ export default function Header() {
     <header className="sticky top-0 z-50 bg-cream/95 backdrop-blur-sm border-b border-border/50">
       <Container>
         <div className="flex items-center justify-between h-16 lg:h-20">
-          {/* Logo */}
           <Link href="/" className="flex flex-col items-start shrink-0 group">
             <div className="flex items-center gap-1">
               <span className="font-serif text-2xl font-bold tracking-tight text-charcoal">
@@ -30,8 +30,10 @@ export default function Header() {
             </span>
           </Link>
 
-          {/* Navigation */}
-          <nav className="hidden lg:flex items-center gap-8" aria-label="Main navigation">
+          <nav
+            className="hidden lg:flex items-center gap-8"
+            aria-label="Main navigation"
+          >
             {navLinks.map((link) => (
               <Link
                 key={link.label}
@@ -43,8 +45,7 @@ export default function Header() {
             ))}
           </nav>
 
-          {/* Icons */}
-          <div className="flex items-center gap-4 sm:gap-5">
+          <div className="flex items-center gap-3 sm:gap-5">
             <button
               type="button"
               aria-label="Search"
@@ -69,24 +70,9 @@ export default function Header() {
                 0
               </span>
             </button>
+            <MobileNav links={navLinks} variant="light" />
           </div>
         </div>
-
-        {/* Mobile nav */}
-        <nav
-          className="lg:hidden flex items-center justify-center gap-4 pb-3 overflow-x-auto"
-          aria-label="Mobile navigation"
-        >
-          {navLinks.map((link) => (
-            <Link
-              key={link.label}
-              href={link.href}
-              className="text-[10px] uppercase tracking-[0.12em] text-charcoal hover:text-gold transition-colors whitespace-nowrap"
-            >
-              {link.label}
-            </Link>
-          ))}
-        </nav>
       </Container>
     </header>
   );
