@@ -12,67 +12,76 @@ const navLinks = [
   { label: "CONTACT", href: "/contact" },
 ];
 
-export default function Header() {
+interface SiteHeaderProps {
+  activeLink?: string;
+}
+
+export default function SiteHeader({ activeLink }: SiteHeaderProps) {
   return (
-    <header className="sticky top-0 z-50 bg-cream/95 backdrop-blur-sm border-b border-border/50">
+    <header className="sticky top-0 z-50 bg-charcoal">
       <Container>
         <div className="flex items-center justify-between h-16 lg:h-20">
-          {/* Logo */}
-          <Link href="/" className="flex flex-col items-start shrink-0 group">
-            <div className="flex items-center gap-1">
-              <span className="font-serif text-2xl font-bold tracking-tight text-charcoal">
-                HS
+          <Link href="/" className="flex flex-col items-start shrink-0">
+            <div className="relative flex items-center">
+              <span className="font-serif text-2xl font-bold tracking-tight text-white">
+                H
               </span>
-              <Star className="w-3 h-3 text-gold fill-gold" />
+              <div className="relative">
+                <Star className="absolute -top-2 left-0 w-2.5 h-2.5 text-white fill-white" />
+                <span className="font-serif text-2xl font-bold tracking-tight text-white">
+                  S
+                </span>
+              </div>
             </div>
-            <span className="text-[8px] uppercase tracking-[0.25em] text-muted">
+            <span className="text-[8px] uppercase tracking-[0.25em] text-white/60">
               Handmade Bags
             </span>
           </Link>
 
-          {/* Navigation */}
-          <nav className="hidden lg:flex items-center gap-8" aria-label="Main navigation">
+          <nav
+            className="hidden lg:flex items-center gap-8"
+            aria-label="Main navigation"
+          >
             {navLinks.map((link) => (
               <Link
                 key={link.label}
                 href={link.href}
-                className="text-[11px] uppercase tracking-[0.15em] text-charcoal hover:text-gold transition-colors"
+                className={`text-[11px] uppercase tracking-[0.15em] text-white hover:text-copper transition-colors ${
+                  link.label === activeLink
+                    ? "border-b border-white pb-0.5"
+                    : ""
+                }`}
               >
                 {link.label}
               </Link>
             ))}
           </nav>
 
-          {/* Icons */}
           <div className="flex items-center gap-4 sm:gap-5">
             <button
               type="button"
               aria-label="Search"
-              className="text-charcoal hover:text-gold transition-colors"
+              className="text-white hover:text-copper transition-colors"
             >
               <Search className="w-5 h-5" strokeWidth={1.5} />
             </button>
             <button
               type="button"
               aria-label="Account"
-              className="text-charcoal hover:text-gold transition-colors hidden sm:block"
+              className="text-white hover:text-copper transition-colors hidden sm:block"
             >
               <User className="w-5 h-5" strokeWidth={1.5} />
             </button>
             <button
               type="button"
               aria-label="Shopping bag"
-              className="relative text-charcoal hover:text-gold transition-colors"
+              className="text-white hover:text-copper transition-colors"
             >
               <ShoppingBag className="w-5 h-5" strokeWidth={1.5} />
-              <span className="absolute -top-1.5 -right-1.5 w-4 h-4 bg-gold text-white text-[9px] font-bold rounded-full flex items-center justify-center">
-                0
-              </span>
             </button>
           </div>
         </div>
 
-        {/* Mobile nav */}
         <nav
           className="lg:hidden flex items-center justify-center gap-4 pb-3 overflow-x-auto"
           aria-label="Mobile navigation"
@@ -81,7 +90,9 @@ export default function Header() {
             <Link
               key={link.label}
               href={link.href}
-              className="text-[10px] uppercase tracking-[0.12em] text-charcoal hover:text-gold transition-colors whitespace-nowrap"
+              className={`text-[10px] uppercase tracking-[0.12em] text-white hover:text-copper transition-colors whitespace-nowrap ${
+                link.label === activeLink ? "border-b border-white pb-0.5" : ""
+              }`}
             >
               {link.label}
             </Link>

@@ -6,7 +6,8 @@ type ButtonVariant =
   | "subscribe"
   | "ghost"
   | "copper"
-  | "primary-full";
+  | "primary-full"
+  | "send";
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode;
@@ -25,6 +26,8 @@ const variantStyles: Record<ButtonVariant, string> = {
     "bg-gold text-charcoal px-6 py-3 uppercase tracking-widest text-xs font-bold hover:bg-gold/90 transition-colors",
   copper:
     "bg-copper text-charcoal px-6 py-3 uppercase tracking-widest text-xs font-bold hover:bg-copper/90 transition-colors",
+  send:
+    "bg-[#c5a367] text-charcoal w-full py-3.5 text-sm font-medium hover:bg-[#b89458] transition-colors",
   ghost: "text-charcoal hover:text-gold transition-colors",
 };
 
