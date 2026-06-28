@@ -10,6 +10,7 @@
   --copper: #c5a073;
   --gold-accent: #c5a367;
   --shop-gold: #d4c4a8;
+  --about-cream: #fdfbf7;
   --charcoal: #0a0a0a;
   --muted: #6b6b6b;
   --border: #e8e6e1;
@@ -25,6 +26,7 @@
   --color-copper: var(--copper);
   --color-gold-accent: var(--gold-accent);
   --color-shop-gold: var(--shop-gold);
+  --color-about-cream: var(--about-cream);
   --color-charcoal: var(--charcoal);
   --color-muted: var(--muted);
   --color-border: var(--border);

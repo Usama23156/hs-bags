@@ -8,7 +8,7 @@ import Container from "@/components/shared/Container";
 const quickLinks = [
   { label: "Shop", href: "/shop" },
   { label: "New Collection", href: "/new-collection" },
-  { label: "About us", href: "#" },
+  { label: "About us", href: "/about" },
   { label: "Contact Us", href: "/contact" },
   { label: "Orders Tracking", href: "#" },
 ];

@@ -8,7 +8,7 @@ import Container from "@/components/shared/Container";
 const quickLinks = [
   { label: "Shop", href: "/shop" },
   { label: "New Collection", href: "/new-collection" },
-  { label: "About us", href: "/about" },
+  { label: "About Us", href: "/about" },
   { label: "Contact Us", href: "/contact" },
   { label: "Orders Tracking", href: "#" },
 ];
@@ -64,7 +64,7 @@ function FacebookIcon({ className }: { className?: string }) {
   );
 }
 
-function ThreadsIcon({ className }: { className?: string }) {
+function WhatsAppIcon({ className }: { className?: string }) {
   return (
     <svg
       className={className}
@@ -72,36 +72,16 @@ function ThreadsIcon({ className }: { className?: string }) {
       fill="currentColor"
       aria-hidden="true"
     >
-      <path d="M12.186 24h-.007c-3.581-.024-6.334-1.205-8.184-3.509C2.35 18.44 1.5 15.586 1.472 12.01v-.017c.03-3.579.879-6.43 2.525-8.482C5.845 1.205 8.6.024 12.18 0h.014c2.746.02 5.043.725 6.826 2.098 1.677 1.29 2.858 3.13 3.509 5.467l-2.04.569c-.584-2.043-1.561-3.439-2.897-4.5-1.433-1.1-3.296-1.655-5.573-1.67-2.889.02-5.11.94-6.617 2.741-1.41 1.687-2.087 4.053-2.113 7.005.026 2.953.703 5.318 2.113 7.005 1.507 1.8 3.728 2.721 6.617 2.741 2.277-.015 4.14-.57 5.573-1.67 1.336-1.061 2.313-2.457 2.897-4.5l2.04.569c-.651 2.337-1.832 4.177-3.509 5.467-1.783 1.373-4.08 2.078-6.826 2.098zM17.337 11.447c-.108-.546-.28-1.04-.51-1.474-.38-.72-.93-1.29-1.62-1.69-.69-.4-1.5-.6-2.4-.6-.9 0-1.71.2-2.4.6-.69.4-1.24.97-1.62 1.69-.23.434-.402.928-.51 1.474-.108.546-.162 1.12-.162 1.71s.054 1.164.162 1.71c.108.546.28 1.04.51 1.474.38.72.93 1.29 1.62 1.69.69.4 1.5.6 2.4.6.9 0 1.71-.2 2.4-.6.69-.4 1.24-.97 1.62-1.69.23-.434.402-.928.51-1.474.108-.546.162-1.12.162-1.71s-.054-1.164-.162-1.71zm-2.04 2.82c-.08.4-.22.75-.41 1.04-.19.29-.43.52-.71.68-.28.16-.6.24-.95.24-.35 0-.67-.08-.95-.24-.28-.16-.52-.39-.71-.68-.19-.29-.33-.64-.41-1.04-.08-.4-.12-.82-.12-1.27s.04-.87.12-1.27c.08-.4.22-.75.41-1.04.19-.29.43-.52.71-.68.28-.16.6-.24.95-.24.35 0 .67.08.95.24.28.16.52.39.71.68.19.29.33.64.41 1.04.08.4.12.82.12 1.27s-.04.87-.12 1.27z" />
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z" />
     </svg>
   );
 }
 
-function SocialLink({
-  href,
-  label,
-  children,
-}: {
-  href: string;
-  label: string;
-  children: React.ReactNode;
-}) {
-  return (
-    <Link
-      href={href}
-      aria-label={label}
-      className="w-9 h-9 rounded-full border border-white/30 flex items-center justify-center text-white hover:border-copper hover:text-copper transition-colors"
-    >
-      {children}
-    </Link>
-  );
-}
-
-export default function ContactFooter() {
+export default function AboutFooter() {
   return (
     <footer className="bg-charcoal text-white pt-12 sm:pt-16 pb-6">
       <Container>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-6 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10 mb-12">
           <div>
             <div className="flex items-center gap-1 mb-1">
               <span className="font-serif text-2xl font-bold">HS</span>
@@ -111,21 +91,37 @@ export default function ContactFooter() {
               Handmade Bags
             </span>
             <p className="font-arabic text-sm text-white/50 mb-6" dir="rtl">
-              حقائب يدوية فاخرة مصنوعة بحب وشغف
+              كل قطعة حكاية تصنع بالحب لتكمل أناقتك
             </p>
-            <div className="flex items-center gap-3">
-              <SocialLink href="#" label="Instagram">
-                <InstagramIcon className="w-4 h-4" />
-              </SocialLink>
-              <SocialLink href="#" label="TikTok">
-                <TikTokIcon className="w-4 h-4" />
-              </SocialLink>
-              <SocialLink href="#" label="Facebook">
-                <FacebookIcon className="w-4 h-4" />
-              </SocialLink>
-              <SocialLink href="#" label="Threads">
-                <ThreadsIcon className="w-4 h-4" />
-              </SocialLink>
+            <div className="flex items-center gap-4">
+              <Link
+                href="#"
+                aria-label="Instagram"
+                className="text-white/60 hover:text-copper transition-colors"
+              >
+                <InstagramIcon className="w-5 h-5" />
+              </Link>
+              <Link
+                href="#"
+                aria-label="TikTok"
+                className="text-white/60 hover:text-copper transition-colors"
+              >
+                <TikTokIcon className="w-5 h-5" />
+              </Link>
+              <Link
+                href="#"
+                aria-label="Facebook"
+                className="text-white/60 hover:text-copper transition-colors"
+              >
+                <FacebookIcon className="w-5 h-5" />
+              </Link>
+              <Link
+                href="#"
+                aria-label="WhatsApp"
+                className="text-white/60 hover:text-copper transition-colors"
+              >
+                <WhatsAppIcon className="w-5 h-5" />
+              </Link>
             </div>
           </div>
 
@@ -169,7 +165,7 @@ export default function ContactFooter() {
             <h3 className="text-xs uppercase tracking-widest mb-4 text-white/80">
               Contact Us
             </h3>
-            <ul className="space-y-3 text-sm text-white/50">
+            <ul className="space-y-3 text-sm text-white/50 mb-8">
               <li className="flex items-center gap-2">
                 <Phone className="w-4 h-4 shrink-0" strokeWidth={1.5} />
                 0100 123 4567
@@ -183,9 +179,7 @@ export default function ContactFooter() {
                 hello@hsbags.com
               </li>
             </ul>
-          </div>
 
-          <div>
             <h3 className="text-xs uppercase tracking-widest mb-4 text-white/80">
               Newsletter
             </h3>
@@ -199,7 +193,7 @@ export default function ContactFooter() {
               <input
                 type="email"
                 placeholder="Your email"
-                className="bg-white/10 border border-white/10 px-4 py-3 text-sm text-white placeholder:text-white/30 focus:outline-none focus:border-copper transition-colors"
+                className="bg-transparent border border-white/20 px-4 py-3 text-sm text-white placeholder:text-white/30 focus:outline-none focus:border-copper transition-colors"
               />
               <Button variant="copper" type="submit" className="w-full">
                 Subscribe
@@ -209,7 +203,7 @@ export default function ContactFooter() {
         </div>
 
         <div className="border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-white/40 text-center sm:text-left flex-1">
+          <p className="text-xs text-white/40 text-center sm:text-left">
             © 2024 HS Handmade Bags. All Rights Reserved.
           </p>
           <div className="flex items-center gap-3">
