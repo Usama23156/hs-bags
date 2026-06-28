@@ -1,26 +1,50 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #fdfcf8;
+  --foreground: #0a0a0a;
+  --cream: #fdfcf8;
+  --beige: #f5f1eb;
+  --hero-overlay: #f2ebe3;
+  --gold: #c5a059;
+  --copper: #c5a073;
+  --gold-accent: #c5a367;
+  --shop-gold: #d4c4a8;
+  --about-cream: #fdfbf7;
+  --charcoal: #0a0a0a;
+  --muted: #6b6b6b;
+  --border: #e8e6e1;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-cream: var(--cream);
+  --color-beige: var(--beige);
+  --color-hero-overlay: var(--hero-overlay);
+  --color-gold: var(--gold);
+  --color-copper: var(--copper);
+  --color-gold-accent: var(--gold-accent);
+  --color-shop-gold: var(--shop-gold);
+  --color-about-cream: var(--about-cream);
+  --color-charcoal: var(--charcoal);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-playfair);
+  --font-arabic: var(--font-noto-arabic);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--cream);
+  color: var(--charcoal);
+  font-family: var(--font-inter), system-ui, sans-serif;
+}
+
+.font-serif {
+  font-family: var(--font-playfair), Georgia, serif;
+}
+
+.font-arabic {
+  font-family: var(--font-noto-arabic), system-ui, sans-serif;
 }
