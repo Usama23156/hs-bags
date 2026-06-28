@@ -4,7 +4,9 @@
   --background: #fdfcf8;
   --foreground: #0a0a0a;
   --cream: #fdfcf8;
+  --beige: #f5f1eb;
   --gold: #c5a059;
+  --copper: #c5a073;
   --charcoal: #0a0a0a;
   --muted: #6b6b6b;
   --border: #e8e6e1;
@@ -14,7 +16,9 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-cream: var(--cream);
+  --color-beige: var(--beige);
   --color-gold: var(--gold);
+  --color-copper: var(--copper);
   --color-charcoal: var(--charcoal);
   --color-muted: var(--muted);
   --color-border: var(--border);
