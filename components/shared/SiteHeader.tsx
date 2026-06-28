@@ -6,7 +6,7 @@ import Container from "@/components/shared/Container";
 
 const navLinks = [
   { label: "HOME", href: "/" },
-  { label: "SHOP", href: "/#shop" },
+  { label: "SHOP", href: "/shop" },
   { label: "NEW COLLECTION", href: "/new-collection" },
   { label: "ABOUT US", href: "#" },
   { label: "CONTACT", href: "/contact" },
@@ -75,9 +75,12 @@ export default function SiteHeader({ activeLink }: SiteHeaderProps) {
             <button
               type="button"
               aria-label="Shopping bag"
-              className="text-white hover:text-copper transition-colors"
+              className="relative text-white hover:text-copper transition-colors"
             >
               <ShoppingBag className="w-5 h-5" strokeWidth={1.5} />
+              <span className="absolute -top-1.5 -right-1.5 w-4 h-4 bg-gold text-white text-[9px] font-bold rounded-full flex items-center justify-center">
+                0
+              </span>
             </button>
           </div>
         </div>

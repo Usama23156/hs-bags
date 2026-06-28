@@ -6,7 +6,7 @@ import Button from "@/components/shared/Button";
 import Container from "@/components/shared/Container";
 
 const quickLinks = [
-  { label: "Shop", href: "/#shop" },
+  { label: "Shop", href: "/shop" },
   { label: "New Collection", href: "/new-collection" },
   { label: "About us", href: "#" },
   { label: "Contact Us", href: "/contact" },

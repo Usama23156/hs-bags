@@ -6,7 +6,7 @@ import Container from "@/components/shared/Container";
 
 const navLinks = [
   { label: "HOME", href: "/" },
-  { label: "SHOP", href: "/#shop" },
+  { label: "SHOP", href: "/shop" },
   { label: "NEW COLLECTION", href: "/new-collection" },
   { label: "ABOUT US", href: "#" },
   { label: "CONTACT", href: "/contact" },
