@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { Search, ShoppingBag, User, Star } from "lucide-react";
 import Container from "@/components/shared/Container";
+import MobileNav from "@/components/shared/MobileNav";
 
 const navLinks = [
   { label: "HOME", href: "/" },
@@ -57,7 +58,7 @@ export default function SiteHeader({ activeLink }: SiteHeaderProps) {
             ))}
           </nav>
 
-          <div className="flex items-center gap-4 sm:gap-5">
+          <div className="flex items-center gap-3 sm:gap-5">
             <button
               type="button"
               aria-label="Search"
@@ -82,25 +83,9 @@ export default function SiteHeader({ activeLink }: SiteHeaderProps) {
                 0
               </span>
             </button>
+            <MobileNav links={navLinks} activeLink={activeLink} variant="dark" />
           </div>
         </div>
-
-        <nav
-          className="lg:hidden flex items-center justify-center gap-4 pb-3 overflow-x-auto"
-          aria-label="Mobile navigation"
-        >
-          {navLinks.map((link) => (
-            <Link
-              key={link.label}
-              href={link.href}
-              className={`text-[10px] uppercase tracking-[0.12em] text-white hover:text-copper transition-colors whitespace-nowrap ${
-                link.label === activeLink ? "border-b border-white pb-0.5" : ""
-              }`}
-            >
-              {link.label}
-            </Link>
-          ))}
-        </nav>
       </Container>
     </header>
   );
