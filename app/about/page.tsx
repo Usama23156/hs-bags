@@ -3,7 +3,7 @@ import AboutStory from "@/components/about/AboutStory";
 import BehindScenes from "@/components/about/BehindScenes";
 import AboutFeatures from "@/components/about/AboutFeatures";
 
-import WhatsAppFloat from "@/components/home/WhatsAppFloat";
+
 
 export default function AboutPage() {
   return (
