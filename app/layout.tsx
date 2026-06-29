@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Inter, Noto_Sans_Arabic, Playfair_Display } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/shared/Navbar";
+import Footer from "@/components/shared/Footer";
+import WhatsAppFloat from "@/components/home/WhatsAppFloat";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -34,7 +37,10 @@ export default function RootLayout({
       className={`${inter.variable} ${playfair.variable} ${notoArabic.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-cream text-charcoal">
+        <Navbar/>
         {children}
+        <Footer/>
+         <WhatsAppFloat />
       </body>
     </html>
   );

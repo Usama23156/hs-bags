@@ -100,10 +100,10 @@ export default function Testimonials() {
           </div>
 
           {/* Lifestyle image */}
-          <div className="relative aspect-[5/6] w-full max-w-md mx-auto lg:max-w-none">
+          <div className="relative aspect-5/6 w-full max-w-md mx-auto lg:max-w-none">
             {/* PLACEHOLDER: Replace with lifestyle image of person wearing bag */}
             <Image
-              src="/images/placeholder-testimonial.svg"
+              src="/images/home-about.jpeg"
               alt="Customer wearing HS handmade bag"
               fill
               className="object-cover"

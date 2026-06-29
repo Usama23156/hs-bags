@@ -19,11 +19,6 @@ const services = [
     subtitle: "منتجات أصلية 100%",
   },
   {
-    icon: CreditCard,
-    title: "دفع آمن",
-    subtitle: "طرق دفع متعددة",
-  },
-  {
     icon: Headphones,
     title: "دعم 24/7",
     subtitle: "نحن هنا لمساعدتك",
@@ -42,7 +37,7 @@ export default function ContactServiceBar() {
       aria-label="Service features"
     >
       <Container>
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 sm:gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-4">
           {services.map(({ icon: Icon, title, subtitle }) => (
             <div
               key={title}

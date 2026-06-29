@@ -8,7 +8,6 @@ import {
 import Container from "@/components/shared/Container";
 
 const features = [
-  { icon: CreditCard, label: "الدفع أونلاين آمن 100%" },
   { icon: Headphones, label: "دعم عملاء 24/7" },
   { icon: RotateCcw, label: "استبدال واسترجاع سهل" },
   { icon: ShieldCheck, label: "تغليف آمن ومميز" },
@@ -22,7 +21,7 @@ export default function AboutFeatures() {
       aria-label="Service features"
     >
       <Container>
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
           {features.map(({ icon: Icon, label }) => (
             <div
               key={label}

@@ -6,14 +6,13 @@ const badges = [
   { icon: ShieldCheck, label: "ضمان الجودة" },
   { icon: RotateCcw, label: "إرجاع سهل" },
   { icon: Headphones, label: "دعم 24/7" },
-  { icon: CreditCard, label: "دفع آمن" },
 ];
 
 export default function TrustBadges() {
   return (
     <section className="py-8 sm:py-10 border-y border-border" aria-label="Trust badges">
       <Container>
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 sm:gap-0">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-0">
           {badges.map(({ icon: Icon, label }, index) => (
             <div
               key={label}

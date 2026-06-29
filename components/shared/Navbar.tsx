@@ -15,14 +15,12 @@ const navLinks = [
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-50 bg-cream/95 backdrop-blur-sm border-b border-border/50">
+    <header className="sticky top-0 z-50 bg-cream/95 backdrop-blur-sm border-b-black border border-border/50 pt-2 pb-1 ">
       <Container>
         <div className="flex items-center justify-between h-16 lg:h-20">
           <Link href="/" className="flex flex-col items-start shrink-0 group">
             <div className="flex items-center gap-1">
-              <span className="font-serif text-2xl font-bold tracking-tight text-charcoal">
-                HS
-              </span>
+              <img src="/images/logo.png" alt="" className="max-w-14" />
               <Star className="w-3 h-3 text-gold fill-gold" />
             </div>
             <span className="text-[8px] uppercase tracking-[0.25em] text-muted">
@@ -58,7 +56,7 @@ export default function Header() {
               aria-label="Account"
               className="text-charcoal hover:text-gold transition-colors hidden sm:block"
             >
-              <User className="w-5 h-5" strokeWidth={1.5} />
+              <p>ENG</p>
             </button>
             <button
               type="button"

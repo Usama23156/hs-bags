@@ -8,14 +8,12 @@ import WhatsAppFloat from "@/components/home/WhatsAppFloat";
 export default function ContactPage() {
   return (
     <>
-      <SiteHeader activeLink="CONTACT" />
       <main>
         <ContactHero />
         <ContactMain />
         <ContactServiceBar />
       </main>
-      <ContactFooter />
-      <WhatsAppFloat />
+     
     </>
   );
 }

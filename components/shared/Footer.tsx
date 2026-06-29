@@ -77,7 +77,7 @@ export default function Footer() {
           {/* Column 1: Logo & Social */}
           <div>
             <div className="flex items-center gap-1 mb-2">
-              <span className="font-serif text-2xl font-bold">HS</span>
+              <img src="/images/logo.png" alt="" className="max-w-14" />
               <Star className="w-3 h-3 text-gold fill-gold" />
             </div>
             <p className="font-arabic text-sm text-white/60 mb-6" dir="rtl">
@@ -170,11 +170,7 @@ export default function Footer() {
           <p className="text-xs text-white/40">
             © 2026 HS Handmade Bags. All rights reserved.
           </p>
-          <div className="flex items-center gap-3">
-            <VisaIcon />
-            <MastercardIcon />
-            <MezaIcon />
-          </div>
+         
         </div>
       </Container>
     </footer>

@@ -9,13 +9,13 @@ export default function AboutStory() {
     >
       <Container>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
-          <div className="relative aspect-[5/6] w-full max-w-lg mx-auto lg:max-w-none overflow-hidden">
+          <div className="relative aspect-5/6 w-full max-w-lg mx-auto lg:max-w-none overflow-hidden">
             {/* PLACEHOLDER: Replace with hands crafting beaded bag image */}
             <Image
-              src="/images/placeholder-about-story.svg"
+              src="/images/about-hero.jpeg"
               alt="Artisan hands crafting a gold-beaded handbag"
               fill
-              className="object-cover"
+              className="object-cover mask-[linear-gradient(to_bottom,blue_50%,transparent)] md:mask-[linear-gradient(to_right,blue_50%,transparent)] rounded-2xl"
               sizes="(max-width: 1024px) 100vw, 50vw"
               priority
             />

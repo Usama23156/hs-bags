@@ -20,16 +20,16 @@ export default function Hero() {
   return (
     <section className="relative w-full overflow-hidden" aria-label="Hero">
       {/* Background Image — PLACEHOLDER: Replace with hero lifestyle image */}
-      <div className="relative w-full h-[500px] sm:h-[560px] lg:h-[620px]">
+      <div className="relative w-full h-125 sm:h-140 lg:h-155">
         <Image
-          src="/images/placeholder-hero.svg"
+          src="/images/hero.png"
           alt="Handmade crystal beaded bag lifestyle"
           fill
           priority
           className="object-cover"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-cream/80 via-cream/40 to-transparent" />
+        <div className="absolute inset-0 bg-linear-to-r from-cream/80 via-cream/40 to-transparent" />
 
         <Container className="relative h-full flex flex-col justify-center">
           <div className="max-w-lg">
@@ -55,39 +55,6 @@ export default function Hero() {
             ))}
           </div>
         </Container>
-
-        {/* Carousel arrows */}
-        <button
-          type="button"
-          aria-label="Previous slide"
-          onClick={() => setActiveSlide((prev) => (prev - 1 + totalSlides) % totalSlides)}
-          className="absolute left-4 top-1/2 -translate-y-1/2 text-charcoal/60 hover:text-charcoal transition-colors"
-        >
-          <ChevronLeft className="w-6 h-6" strokeWidth={1} />
-        </button>
-        <button
-          type="button"
-          aria-label="Next slide"
-          onClick={() => setActiveSlide((prev) => (prev + 1) % totalSlides)}
-          className="absolute right-4 top-1/2 -translate-y-1/2 text-charcoal/60 hover:text-charcoal transition-colors"
-        >
-          <ChevronRight className="w-6 h-6" strokeWidth={1} />
-        </button>
-
-        {/* Carousel dots */}
-        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex items-center gap-2">
-          {Array.from({ length: totalSlides }).map((_, i) => (
-            <button
-              key={i}
-              type="button"
-              aria-label={`Go to slide ${i + 1}`}
-              onClick={() => setActiveSlide(i)}
-              className={`w-2 h-2 rounded-full transition-colors ${
-                i === activeSlide ? "bg-charcoal" : "bg-charcoal/30"
-              }`}
-            />
-          ))}
-        </div>
       </div>
     </section>
   );

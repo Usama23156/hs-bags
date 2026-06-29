@@ -26,21 +26,21 @@ export default function BehindScenes() {
             <div className="col-start-1 row-start-1 relative aspect-square overflow-hidden">
               {/* PLACEHOLDER: Replace with beads selection image */}
               <Image
-                src="/images/placeholder-gallery-beads.svg"
+                src="/images/about2.jpeg"
                 alt="Hands selecting beads from a tray"
                 fill
-                className="object-cover"
+                className="object-cover rounded-2xl"
                 sizes="(max-width: 640px) 50vw, 25vw"
               />
             </div>
 
-            <div className="col-start-2 row-start-1 row-span-2 relative min-h-[280px] sm:min-h-[360px] overflow-hidden">
+            <div className="col-start-2 row-start-1 row-span-2 relative min-h-70 sm:min-h-90 overflow-hidden">
               {/* PLACEHOLDER: Replace with shimmering beaded handbag image */}
               <Image
-                src="/images/placeholder-gallery-bag.svg"
+                src="/images/about1.jpeg"
                 alt="Fully beaded shimmering handbag"
                 fill
-                className="object-cover"
+                className="object-cover rounded-2xl"
                 sizes="(max-width: 640px) 50vw, 25vw"
               />
             </div>
@@ -48,10 +48,10 @@ export default function BehindScenes() {
             <div className="col-start-1 row-start-2 relative aspect-square overflow-hidden">
               {/* PLACEHOLDER: Replace with pearl bag detail image */}
               <Image
-                src="/images/placeholder-gallery-pearl.svg"
+                src="/images/about3.jpeg"
                 alt="Hands opening a pearl-encrusted bag"
                 fill
-                className="object-cover"
+                className="object-cover rounded-2xl"
                 sizes="(max-width: 640px) 50vw, 25vw"
               />
             </div>
@@ -59,10 +59,10 @@ export default function BehindScenes() {
             <div className="col-start-2 row-start-3 relative aspect-square overflow-hidden">
               {/* PLACEHOLDER: Replace with purse inspection image */}
               <Image
-                src="/images/placeholder-gallery-purse.svg"
+                src="/images/about4.jpeg"
                 alt="Gloved hands inspecting a beaded purse"
                 fill
-                className="object-cover"
+                className="object-cover rounded-2xl"
                 sizes="(max-width: 640px) 50vw, 25vw"
               />
             </div>
