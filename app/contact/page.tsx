@@ -1,6 +1,6 @@
 import ContactHero from "@/components/contact/ContactHero";
 import ContactMain from "@/components/contact/ContactMain";
-import ContactServiceBar from "@/components/contact/ContactServiceBar";
+import ContactServiceBar from "@/components/shared/ServiceBar";
 
 
 export default function ContactPage() {

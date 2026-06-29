@@ -15,7 +15,7 @@ const products = [
 
 export default function BestSellers() {
   return (
-    <section id="shop" className="py-12 sm:py-16 lg:py-20" aria-labelledby="best-sellers-heading">
+    <section id="shop" className="py-12 sm:py-16 lg:py-20 bg-hero-overlay" aria-labelledby="best-sellers-heading ">
       <Container>
         <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-10">
           <div className="text-center sm:text-left flex-1">

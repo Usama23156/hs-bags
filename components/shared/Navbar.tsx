@@ -15,7 +15,7 @@ const navLinks = [
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-50 bg-cream/95 backdrop-blur-sm border-b-black border border-border/50 pt-2 pb-1 ">
+    <header className="sticky top-0 z-50 bg-hero-overlay backdrop-blur-sm border-b-black border border-border/50 pt-2 pb-1 ">
       <Container>
         <div className="flex items-center justify-between h-16 lg:h-20">
           <Link href="/" className="flex flex-col items-start shrink-0 group">

@@ -31,7 +31,7 @@ export default function Testimonials() {
   const [activeSlide, setActiveSlide] = useState(0);
 
   return (
-    <section className="py-12 sm:py-16 lg:py-20" aria-labelledby="testimonials-heading">
+    <section className="py-12 sm:py-16 lg:py-20 bg-hero-overlay" aria-labelledby="testimonials-heading ">
       <Container>
         <h2
           id="testimonials-heading"

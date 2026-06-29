@@ -33,7 +33,7 @@ const services = [
 export default function ContactServiceBar() {
   return (
     <section
-      className="bg-[#f0f0f0] py-8 sm:py-10"
+      className="bg-hero-overlay  sm:py-16"
       aria-label="Service features"
     >
       <Container>

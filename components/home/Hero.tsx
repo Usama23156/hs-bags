@@ -26,7 +26,7 @@ export default function Hero() {
           alt="Handmade crystal beaded bag lifestyle"
           fill
           priority
-          className="object-cover"
+          className="object-cover "
           sizes="100vw"
         />
         <div className="absolute inset-0 bg-linear-to-r from-cream/80 via-cream/40 to-transparent" />

@@ -4,7 +4,6 @@ import BehindScenes from "@/components/about/BehindScenes";
 import AboutFeatures from "@/components/about/AboutFeatures";
 
 
-
 export default function AboutPage() {
   return (
     <>

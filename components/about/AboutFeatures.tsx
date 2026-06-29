@@ -17,7 +17,7 @@ const features = [
 export default function AboutFeatures() {
   return (
     <section
-      className="bg-[#f5f5f5] py-8 sm:py-10"
+      className="bg-hero-overlay py-8 sm:py-10"
       aria-label="Service features"
     >
       <Container>
